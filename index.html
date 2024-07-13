@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta>
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <nav>
+            <ul id="navmenu">
+                <li><canvas id="logoCanvas">ob-interactive logo</canvas></li>
+                <li>Home</li>
+                <li>About Me</li>
+                <li>Contact Me</li>
+            </ul>
+        </nav>
+        <div id="animation">
+            <canvas id="drawAnim"></canvas>
+            <div id="animControls">
+               <div class="inputs">
+                <label for="speed">Speed</label>
+                <input id="speed" type="number" min="0.5" max="20.0" step="0.5" value="2.0">
+               </div>
+               <div class="inputs">
+                <label for="nbuildings">Number Of Buildings</label>
+                <input id="nbuildings" type="number" min="12" max="40" step="2" value="14">
+               </div>
+               <div class="inputs">
+                <label for="buildingColor">Building Color</label>
+                <input id="buildingColor" type="color" >
+               </div>
+               <div class="inputs">
+                <label for="skycolor1">Skycolor1</label>
+                <input id="skycolor1" type="color" >
+               </div>
+               <div class="inputs">
+                <label for="skycolor2">Skycolor2</label>
+                <input id="skycolor2" type="color" >
+               </div>
+            </div>
+        </div>
+        <main id="heading">
+            <h1>OB-INTERACTIVE</h1>
+            <h4>Enhancing Education And Entertainment Through Engaging Interactive Graphics Development</h4>
+        </main>
+        <div id="drawapp">
+            <div id="drawarea">
+                <canvas id="drawer">drawing area</canvas>
+                <div id="maincontrols">
+                    <div><button>Instructions</button></div>
+                    <div><button>Draw</button></div>
+                    <div><button>Clear Canvas</button></div>
+                    <div><button>Clear Shape List</button></div>
+                    <div><button>Reset Colors</button></div>
+                    <div>Background<input type="color" value="#241818"></div>
+                </div>
+            </div>
+            <div id="drawcontrols">
+                <h6>Choose Shape</h6>
+                <div id="shapegroup">
+                    <div><canvas></canvas></div>
+                    <div><canvas></canvas></div>
+                    <div><canvas></canvas></div>
+                    <div><canvas></canvas></div>
+                </div>
+                <h6>Shape Configuration</h6>
+                <div id="shapeconfig">
+                    <div><canvas data-id="1"></canvas></div>
+                    
+                </div>
+                <h6>Choose Shape Pattern</h6>
+                <div id="options1">
+                    <label for="linearShape"><input type="radio" name="PatternShape" id="linearShape" value="linear">Forward Cycle</label>
+                    <label for="randomShape"><input type="radio" name="PatternShape" id="randomShape" value="random">Random</label>
+                    <label for="fwdreverseShape"><input type="radio" name="PatternShape" id="fwdreverseShape" value="forwardreverse">Forward Reverse</label>
+                </div>
+                <h6>Choose Color Pattern</h6>
+                <div id="colorgroup">
+                    <div><input type="color" value="#20b2aa" data-pos="1"></div>
+                    
+                </div>
+                <div id="options2">
+                    <label for="linearColor"><input type="radio" name="PatternColor" id="linearColor" value="linear">Forward Cycle</label>
+                    <label for="randomColor"><input type="radio" name="PatternColor" id="randomColor" value="random">Random</label>
+                    <label for="fwdreverseColor"><input type="radio" name="PatternColor" id="fwdreverseColor" value="forwardreverse">Forward Reverse</label>
+                </div>
+            </div>
+            
+        </div>
+        <div id="sceneapp">
+            <div id="leftbar">
+                <div id="objchoose">
+                    <h6>Choose Object</h6>
+                    <div id="canvobjs">
+                        <div><canvas></canvas></div>
+                        <div><canvas></canvas></div>
+                        
+                    </div>
+                </div>
+                
+                <div id="scenesetup">
+                    <h6>Scene List</h6>
+                    <div id="objlist">
+                        <ul></ul>
+                    </div>
+                    <div id="btnlist">
+                        <button>Delete</button>
+                        <button>Duplicate</button>
+                    </div>
+                </div>
+            </div>
+            <div id="canvbar"><canvas></canvas></div>
+            <div id="rightbar"></div>
+        </div>
+
+        <dialog id="config">
+            <h5>Configure Shape</h5>
+            <div id="topdisplay">
+                <div id="canvdiv1"><canvas id="canvdisplay"></canvas></div>
+                <div id="optdiv1"></div>
+            </div>
+            <div id="bottomdisplay">
+                <button class="okay">OK</button>
+                <button class="cancel">CANCEL</button>
+            </div>
+        </dialog>
+        <div id="testCanvas">
+            
+        </div>
+        <script src="draws.js"></script>
+    </body>
+</html>

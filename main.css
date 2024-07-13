@@ -1,0 +1,129 @@
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+    margin: 0; padding: 0;
+}
+nav:first-of-type{
+    position: fixed; top: 0%;left: 0%; width: 100%; z-index: 4;
+}
+h1{padding-top: 3%; position: relative; left: 0;}
+#heading>h4{position: relative; left: 0;}
+
+#logoCanvas{
+    width: 5vh; height: 5vh;
+    border-right: solid thin lightseagreen;
+    
+}
+
+#navmenu{
+    font-size: large;
+    background-color: lightseagreen; color: white; margin: auto; padding: 2%;
+    display: grid;list-style: none;
+    grid-template-columns: 2fr repeat(3,1fr);
+}
+#animation{
+    height: 45vh; border: solid thick lightseagreen;
+    position: relative;
+}
+#drawAnim{
+    width: 100%; height: 100%;
+    /*color: #20b2aa;*/
+}
+#animControls{
+    display: grid; position:absolute; background-color: rgba(32, 178, 170, 0.4);
+    top: 50%; left: 0%; height: 45%; overflow-y: auto; width: 33%;
+    border: solid thin lightseagreen; padding: 1%; border-radius: 3%;
+    color: white;
+}
+.inputs{
+    display: grid; grid-template-columns: 1fr 1fr;
+}
+#heading{
+    color: lightseagreen;
+    text-align: center;
+    font-size: x-large;
+}
+#drawarea{position: relative;}
+#maincontrols{
+    position: absolute; top: 0%; left: 10%; width: 80%; height: max-content;
+    display: grid;
+    grid-template-columns: repeat(6,1fr); background-color: rgba(218, 219, 163, 0.552); border-radius: 3%;
+}
+#maincontrols button{background-color: lightseagreen; color: white; margin: auto; padding: auto;}
+#drawapp{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    border: solid thick lightseagreen;
+    height: 70vh; overflow-y: auto;
+}
+#drawcontrols{ height: inherit;
+    overflow-y: auto;
+}
+#drawcontrols h6{
+    background-color:lightseagreen ; text-align: center; color: white; font-size: large;
+    overflow-y: auto;
+}
+#drawer{
+    width: 100%; height: 100%; background-color: #241818;
+}
+#shapegroup,#colorgroup{
+    display: grid; grid-template-columns: repeat(4,1fr);
+    height: 25%;
+}
+#shapeconfig{
+    display: grid; grid-template-columns: repeat(3,1fr); height: 30%;  margin-top: 0%;
+    overflow-y: auto;
+}
+
+#shapegroup canvas,#shapeconfig canvas,#colorgroup input{
+    width: 100%; border: solid thin gray;
+}
+#shapeconfig canvas{
+    height: 80%;
+}
+#shapeconfig div{
+    display: grid; position: relative;
+}
+
+#shapeconfig button{
+    position: absolute; top: 81%;left: 0%; width: 100%;
+}
+#colorgroup input[type="color"]{
+    height: 100%;
+}
+/*#shapeconfig button{height: 30%;}*/
+#colorgroup div{
+    height: 100%;
+}
+#colorgroup #divaddcanv{position: relative;}
+#colorgroup div>canvas{width: 100%; height: 70%;position: relative; top: 0%; left: 0%; margin: 0%; }
+#colorgroup #divaddcanv>p{ 
+    height: 30%;
+   /* position: relative; top: 70%; left: 0%;*/
+     color: lightseagreen; width: 100%; text-align: center;
+     /*color: white; */}
+#options1,#options2{margin-top: 7vh; color: lightseagreen;}
+#config{width: 60%;} 
+#topdisplay{display: grid;
+          grid-template-columns: 60% 40%;
+          height: 65vh; overflow-y: auto;
+} 
+#topdisplay div{height: inherit;} 
+#bottomdisplay{display: grid; grid-template-columns: 1fr 1fr;} 
+#bottomdisplay button{background-color:lightseagreen ; color: white;} 
+#canvdisplay{width: 100%; height: 100%; background-color: black;}
+
+#config h5{background-color:lightseagreen ; color: white;}
+
+#sceneapp{
+    display: grid; grid-template-columns: 10% 70% 20%; position: relative;
+    border: 2px solid lightseagreen;
+}
+table{
+    font-family: 'Times New Roman', Times, serif;
+}
+#objchoose>h6,#scenesetup>h6{text-align: center; font-size: large; color: white; background-color: lightseagreen;}
+#canvobjs>div,#leftbar{border: 2px solid lightseagreen;}
+#canvobjs canvas{width: 100%;}
+#objlist{height: 40vh; overflow-y: auto; border: 2px solid lightseagreen;}
+#rightbar{height: inherit; overflow-y: auto; border: 2px solid lightseagreen;}
